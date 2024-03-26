@@ -1,0 +1,39 @@
+
+  h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .update-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+  }
+  
+  .update-container h4 {
+    margin-bottom: 8px;
+  }
+  
+  .update-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .update-input {
+    padding: 5px;
+  }
+  
+  .update-button {
+    background-color: greenyellow;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+  }
+  

@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "name": "Manish",
+      "id": 1
+    },
+    {
+      "name": "Mukesh Verma",
+      "id": 2
+    },
+    {
+      "name": "Monu",
+      "id": 3
+    },
+    {
+      "name": "Monu Verma",
+      "id": 4
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

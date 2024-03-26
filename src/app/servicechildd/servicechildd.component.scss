@@ -1,0 +1,37 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400%;
+}
+
+label{
+    font-size: 40px;
+}
+
+button{
+    padding: 20px;
+     margin-left: 180px;
+     font-size: 18px;
+     color: red;
+     background-color: lightgreen;
+     border: none;
+     border-radius: 10px;
+}
+
+input{
+    font-size: 30px;
+    width: 40%;
+    margin-left: 10px;
+}
+.main{
+    width: 500px;
+    height: 200px;
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 40px;    
+}

@@ -1,0 +1,76 @@
+body {
+    max-height: 300px;
+      max-width: 400px;
+      background-color: gainsboro;
+    }
+    
+    h1 {
+      text-align: center;
+      color: black;
+      
+    }
+    
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .medium {
+      text-align: center;
+      background-color: bisque;
+    }
+    
+    .input {
+      padding: 1px;
+      height: 50px;
+      outline: none;
+      border: none;
+      text-align: center;
+      background-color: white;
+      width: 450px;
+      font-size: 1.15rem;
+      margin: 2px;
+      border-radius: 25px;
+    }
+    
+    .PostButton, .updatebutton {
+      height: 50px;
+      width: 50px;
+      border: none;
+      border-radius: 25px;
+      background-color: gold;
+      color: white;
+      text-align: center;
+    }
+
+    .PostButton:hover ,.updatebutton:hover{
+      background-color: cornflowerblue;
+    }
+    
+    .disabled{
+      display: none;
+    }
+    
+    
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    th,td {
+      border: 1px solid whitesmoke;
+      text-align: center;
+      width: 40%;
+      font-size: 20px;
+
+    }
+    
+    .namecenter{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    

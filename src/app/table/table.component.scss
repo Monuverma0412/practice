@@ -1,0 +1,33 @@
+table, th, td {
+    border-collapse: collapse;
+    border:1px solid black;
+    text-align: center;
+}
+table {
+      width: 60%;
+      align-items: center;
+  }
+  #serial{
+    width: 10%;
+  }
+
+h1{
+    color: red;
+    text-align: center;
+}
+th, td {
+  padding: 25px;
+}
+
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+th {
+  background-color: green; 
+  color: white; 
+}
+

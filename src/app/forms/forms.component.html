@@ -1,0 +1,78 @@
+<!-- <h1>{{title}}</h1>
+
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <label for="name">Name:</label>
+    <input type="text" placeholder="Enter Name" name="user" formControlName="lastName"><br>
+    <span style="color: red;" *ngIf="lastName && lastName.invalid && lastName.touched ">Name is not valid</span>
+    <br>
+    <label for="name">Gmail:</label>
+    <input type="text" placeholder="Enter Gmail" name="user" formControlName="user"><br>
+    <span style="color: red;" *ngIf="user && user.invalid && user.touched ">Gmail is not valid</span>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Enter Password" name="password" formControlName="password">
+    <br>
+    <span style="color: red;" *ngIf="password && password.invalid && password.touched ">Password is not valid</span>
+    <br>
+    <button [disabled]="loginForm.invalid">Login</button>
+</form>
+ 
+<div *ngIf="formSubmited">
+    <h2>Form Data:</h2>
+    <p>Name: {{ loginForm.value.lastName }}</p>
+    <p>Email: {{ loginForm.value.user }}</p>
+    <p>Password: {{ loginForm.value.password }}</p>
+</div> -->
+
+
+
+
+<form [formGroup]="studentForm" (ngSubmit)="student()">
+    <label for="firstName">First Name:</label>
+    <input type="text" placeholder="Enter First Name" name="firstName" formControlName="firstName"><br>
+    <span style="color: red;" *ngIf="firstName && firstName.invalid && firstName.touched "> First Name is not
+        valid</span>
+    <br>
+    <label for="name">Middle Name:</label>
+    <input type="text" placeholder="Enter Middle Name" name="middleName" formControlName="middleName"><br>
+    <span style="color: red;" *ngIf="middleName && middleName.invalid && middleName.touched ">Middle Name is not
+        valid</span>
+    <br>
+    <label for="password">Last Name:</label>
+    <input type="text" placeholder="Enter Last Name" name="password" formControlName="lastName">
+    <br>
+    <span style="color: red;" *ngIf="lastName && lastName.invalid && lastName.touched ">Last Name is not valid</span>
+    <br>
+    <label for="name">Full Name:</label>
+    <input type="text" placeholder="Enter Full Name" name="fullName" formControlName="fullName"><br>
+    <span style="color: red;" *ngIf="fullName && fullName.invalid && fullName.touched "> FUll Name is not
+        valid</span>
+    <br>
+    <label for="name">Date:</label>
+    <input type="text" placeholder="Enter Date" name="user" formControlName="Date"><br>
+    <span style="color: red;" *ngIf="date && date.invalid && date.touched ">Date  is not
+        valid</span>
+    <br>
+    <label for="password">Age :</label>
+    <input type="number" placeholder="Enter Age" name="Age" formControlName="Age">
+    <br>
+    <span style="color: red;" *ngIf="age && age.invalid && age.touched ">Age is not valid</span>
+    <br> <label for="name">First Name:</label>
+    <input type="number" placeholder="Enter Phone No.:" name="user" formControlName="lastName"><br>
+    <span style="color: red;" *ngIf="phone && phone.invalid && phone.touched "> Phone Number Name is not
+        valid</span>
+    <br>
+    <label for="name">Gmail:</label>
+    <input type="text" placeholder="Enter Gmail" name="Gmail" formControlName="Gmail"><br>
+    <span style="color: red;" *ngIf="gmail && gmail.invalid && gmail.touched ">Gmail is not
+        valid</span>
+    <br>
+    <!-- <label for="password">Last Name:</label>
+    <input type="password" placeholder="Enter Password" name="password" formControlName="password">
+    <br>
+    <span style="color: red;" *ngIf="lastName && lastName.invalid && lastName.touched ">Password is not valid</span>
+    <br> -->
+    <button [disabled]="studentForm.invalid">Login</button>
+
+    
+</form>

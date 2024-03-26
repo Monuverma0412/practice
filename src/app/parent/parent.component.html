@@ -1,0 +1,10 @@
+<div class="main-container">
+
+    <div class="main">
+        <label>Editor: </label>
+        <input #Data  name="Data" id="Data" placeholder="write any data"  [value]="messageData"><br><br>
+        <button (click)="login(Data.value)">Send</button>
+    </div>
+    <app-child (updateValue)="getUpdate($event)" [message]="messageData"></app-child>
+
+</div> 

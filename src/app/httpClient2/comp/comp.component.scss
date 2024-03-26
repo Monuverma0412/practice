@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.comp1 {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    margin-right: auto;
+    flex-basis: 48%;
+
+}
+h1{
+    text-align: center;
+}
+
+.comp2 {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    margin-left: auto;
+    flex-basis: 48%;
+
+}

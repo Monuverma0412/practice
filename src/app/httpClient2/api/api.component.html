@@ -1,0 +1,32 @@
+<h1>Api Component</h1>
+<div class="main">
+    <h2>To Do List</h2>
+    <div class="medium">
+      <input class="input" type="text" placeholder="What Do You Want To Do?" [(ngModel)]="name">
+      <button class="PostButton" (click)="PostTask()">Post Task</button>
+      <table> 
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th colspan="2">Actions</th>
+        </tr>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td class="namecenter">{{ user.name }}</td>
+          <td> 
+            <button class="Edit" (click)="PutTask(user.id,user.name)">Put Task</button>
+          </td>
+          <td>
+            <button class="Delete" (click)="DeleteTask(user.id)">Delete</button>
+          </td>
+        </tr>
+      </table>
+     <div *ngIf="ifUpdate">
+        <input #update class="input" type="text" [value]="editValue" placeholder="Write any text"> 
+        <input class="disabled" type="text" #id [value]="editId" disabled="true">
+        <button class="updatebutton" (click)="updateTask(id.value,update.value)">Update</button>
+     </div>
+    </div>
+    </div>
+
+    <!-- json-server --watch database.json -->

@@ -1,0 +1,72 @@
+<h2>Home helo Component</h2>
+
+<div>
+   <div class="demo">
+    <form >
+       <div class="demo1">
+          <div>
+             <label contentColor [color]="colorName1">Name:</label>
+             <input (input)="onNameChange(first.value)" #first type="text" placeholder="name" id="name"><br><br>
+             <span class="exist" *ngIf="!nameExist">Name is required</span>
+          </div>
+
+          <div>
+             <label  contentColor [color]="colorName2">DOB:</label>
+             <input (input)="onDobChange(second.value)" #second type="date" placeholder="dob" id="dob" max="2008-12-31" min="1994-01-01"><br><br>
+             <span class="exist" *ngIf="!dobExist">DOB is required</span>
+          </div>
+ 
+          <div>
+             <label  contentColor [color]="colorName3">Age:</label>
+             <input (input)="onAgeChange(third.value)" #third type="number" placeholder="age" id="age" min="18" max="30"><br><br>
+             <span class="exist" *ngIf="!ageExist">Age is required</span>
+          </div>
+
+          <div>
+             <label  contentColor [color]="colorName4">Password:</label>
+             <input (input)="onPasswordChange(fourth.value)" #fourth type="password" placeholder="password" id="password"><br><br>
+             <span class="exist" *ngIf="!passwordExist">Password is required</span>
+          </div>
+          <button (click)="login(first.value, second.value, third.value, fourth.value)">Login</button><br>
+ 
+          <div style="font-size: 20px;margin-top: 30px;">
+             <select (change)="onNumberChange($event)">
+                <option value="sunday">1</option>
+                <option value="monday">2</option>
+                <option value="tuesday">3</option>
+                <option value="wednesday">4</option>
+                <option value="thursday">5</option>
+                <option value="friday">6</option>
+                <option value="saturday">7</option>
+             </select>
+ 
+             <div [ngSwitch]="chooseValue">
+                <h3 *ngSwitchCase="'sunday'">Sunday</h3>
+                <h3 *ngSwitchCase="'monday'">Monday</h3>
+                <h3 *ngSwitchCase="'tuesday'">Tuesday</h3>
+                <h3 *ngSwitchCase="'wednesday'">Wednesday</h3>
+                <h3 *ngSwitchCase="'thursday'">Thursday</h3>
+                <h3 *ngSwitchCase="'friday'">Friday</h3>
+                <h3 *ngSwitchCase="'saturday'">Saturday</h3>
+                <h3 *ngSwitchDefault>Default</h3> 
+             </div>
+          </div>
+ 
+ 
+          <p>Not registered? <a [routerLink]="['/account']" >Create an Account</a>
+          </p>
+ 
+       </div>
+    </form>
+ </div>
+
+<div>
+   <h2 contentColor [color]="colorChange">Second heading</h2>
+   <input type="text" #color placeholder="Enter color name" name="" id="">
+   <button (click)="changeColor(color.value)">Change Color</button>
+ </div>
+ 
+ <p [ngClass]="{'test1': valTrue, 'test2': !valTrue}">
+   {{x | date: 'dd-MM-YYYY h:mm:ss a'}}
+ </p>
+ 

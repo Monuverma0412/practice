@@ -1,0 +1,13 @@
+<div class="main-container" *ngIf="message.length !=0">
+    <h1>
+        Editor come from to parent <span style="color: blue;"> {{message}}</span>
+    </h1>
+    <div>
+        <label>Message: </label>
+        <input #Data class="input" name="Data" id="Data" placeholder="write any data" [value]=message><br><br>
+        <button class="button" (click)="login(Data.value)">Send</button>
+
+    </div>
+
+
+</div>

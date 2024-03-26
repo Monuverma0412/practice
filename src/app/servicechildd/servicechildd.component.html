@@ -1,0 +1,9 @@
+<h1>Servicechildd Component</h1>
+<div class="main-container" *ngIf="geetData.length !=0">
+ <h1>   Editor come from to serviceparent: <span style="color: blue;"> {{geetData}}</span><br></h1>
+    <div class="main">
+        <label>Message:</label>
+        <input #Data class="input" name="Data" id="Data" placeholder="write any data" [value]=geetData><br><br>
+        <button class="button" (click)="submit(Data.value)">submit</button>
+    </div>
+</div>

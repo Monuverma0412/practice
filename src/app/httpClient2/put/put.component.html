@@ -1,0 +1,17 @@
+<div>
+    <h2>Put Component</h2>
+    
+    <form #postDataForm="ngForm">
+      <label for="name">Name:</label>
+      <input  [(ngModel)]="name" type="text" id="name" name="name">
+      
+      <label for="email">Email:</label>
+      <input [(ngModel)]="email  " type="email" id="email" name="email">
+      
+      <label for="phone">Phone:</label>
+      <input [(ngModel)]="phone" type="tel" id="phone" name="phone"><br><br>
+      
+      <button (click)="putData()">Post Data</button>
+    </form>
+  </div>
+   
